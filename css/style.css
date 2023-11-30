@@ -1,0 +1,41 @@
+body{
+    font-family: 'Rubik', sans-serif;
+}
+
+header.header{
+    width: 100%;
+}
+
+nav.header{
+    width: 100%;
+    background-color: #160E33;
+}
+
+ul.header{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    height: 100px;
+    align-items: center;
+}
+
+ul.nav__item{
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+}
+
+ul.header a{
+    color: white;
+    text-decoration: none;
+}
+
+ul.nav__item a:hover{
+    color: #EF443B;
+}
+
+/* layout1 */
+
+section.layout1{
+    background-image: url("img/bg.png");
+}
