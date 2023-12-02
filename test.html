@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="layout1" style="height:100vh; background-color: red;">Layout 1
+        <button>nextLayout</button>
+    </div>
+<div id="layout2" style="height:100vh; background-color: blue;">Layout 2
+    <button>nextLayout</button>
+</div>
+<div id="layout3" style="height:100vh; background-color: yellow;">Layout 3
+    <button>nextLayout</button>
+</div>
+
+<script>
+    document.querySelectorAll('button').forEach(function(button, index) {
+        button.addEventListener('click', function() {
+            // Xác định layout hiện tại và cuộn đến layout tiếp theo
+            let nextLayoutId = "layout" + (index + 2);
+            let nextLayout = document.getElementById(nextLayoutId);
+
+            if (nextLayout) {
+                nextLayout.scrollIntoView({ behavior: 'smooth' });
+            }
+        });
+    });
+</script>
+</body>
+</html>

@@ -36,13 +36,16 @@ ul.nav__item a:hover{
 
 /* layout1 */
 
+
+
 section.layout1{
     background-image: linear-gradient(0deg, #160E33 0%, rgba(22, 14, 51, 0.00) 31.25%), url("../img/bg.png");
     background-position: center center; 
     background-size: cover; 
     background-repeat: no-repeat; 
+    background-color:#575714;
     width: 100%;
-    height: calc(100vh - 100px);
+    height: 100vh;
     text-align: center;
     color: white;
 }
@@ -124,4 +127,9 @@ ul.collab li span{
 
 ul.collab li img{
     margin-right: 5px;
+}
+
+section.layout2{
+    height: 100vh;
+    background-color: red;
 }
